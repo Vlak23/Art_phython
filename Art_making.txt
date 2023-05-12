@@ -1,0 +1,404 @@
+def row_1():
+    for i in range(6):
+        move()
+    for i in range(3):
+        move()
+        paint(color["black"])
+    for i in range(5):
+        move()
+    for i in range(3):
+        move()
+        paint(color["black"])
+    
+def move_up_row_right():
+    while front_is_clear():
+        move()
+    if front_is_blocked():
+        turn_left()
+        move()
+        turn_left()
+    else:
+        return
+def move_up_row_left():
+    while front_is_clear():
+        move()
+    if front_is_blocked():
+        turn_right()
+        move()
+        turn_right()
+    else:
+        return    
+
+
+def row_2():
+    for i in range(5):
+        move()
+    
+    for i in range(3):
+        move()
+        paint(color["black"])
+        move()
+        paint(color["orange"])
+    paint(color["white"])
+    for i in range(2):
+        move()
+    for i in range(3):
+        move()
+        paint(color["black"])
+        move()
+        paint(color["orange"])
+    paint(color["white"])
+
+def row_3():
+    for i in range(6):
+        move()
+    paint(color["black"])
+    for i in range(4):
+        move()
+        paint(color["orange"])
+    move()
+    for i in range(2):
+        paint(color["black"])
+        move()
+    paint(color["black"])
+    for i in range(4):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+    
+def row_4():
+    for i in range(7):
+        move()
+    paint(color["black"])
+    for i in range(9):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+
+def row_5_6():
+    for i in range(6):
+        move()
+    paint(color["black"])
+    for i in range(11):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+
+def row_7():
+    for i in range(5):
+        move()
+    for i in range(3):
+        paint(color["black"])
+        move()
+    for i in range(9):
+        paint(color["orange"])
+        move()
+    for i in range(3):
+        paint(color["black"])
+        move()
+        
+def row_8():
+    for i in range(4):
+        move()
+    paint(color["black"])
+    for i in range(2):
+        for i in range(2):
+            move()
+            paint(color["orange"])
+        move()
+        paint(color["black"])
+    for i in range(4):
+        move()
+        paint(color["black"])
+    for i in range(2):
+        for i in range(2):
+            move()
+            paint(color["orange"])
+        move()
+        paint(color["black"])
+        
+def row_9():
+    for i in range(4):
+        move()
+    paint(color["black"])
+    for i in range(5):
+        move()
+        paint(color["orange"])
+    paint(color["black"])
+    for i in range(6):
+        move()
+        paint(color["orange"])
+    paint(color["black"])
+    for i in range(5):
+        move()
+        paint(color["orange"])
+    paint(color["black"])
+
+def row_10():
+    for i in range(5):
+        move()
+    paint(color["black"])
+    for i in range(2):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+    for i in range(7):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+    for i in range(2):
+        move()
+        paint(color["orange"])
+    for i in range(2):
+        move()
+        paint(color["black"])
+
+def row_11():
+    for i in range(3):
+        move()
+    paint(color["black"])
+    for i in range(2):
+        move()
+        paint(color["orange"])
+    for i in range(2):
+        move()
+        paint(color["black"])
+    for i in range(9):
+        move()
+        paint(color["orange"])
+    for i in range(2):
+        move()
+        paint(color["black"])
+       
+def row_12():
+    for i in range(7):
+        move()
+    paint(color["black"])
+    move()
+    paint(color["cyan"])
+    move()
+    paint(color["black"])
+    for i in range(6):
+        move()
+        paint(color["orange"])
+    paint(color["black"])
+    move()
+    paint(color["cyan"])
+    move()
+    paint(color["black"])
+    move()
+    move()
+    paint(color["black"])
+    move()
+    paint(color["orange"])
+    move()
+    paint(color["black"])
+
+def row_13():
+    for i in range(3):
+        move()
+    paint(color["black"])
+    move()
+    paint(color["orange"])
+    move()
+    paint(color["black"])
+    move()
+    for i in range(3):
+        move()
+        paint(color["black"])
+    for i in range(6):
+        move()
+        paint(color["orange"])
+    for i in range(3):
+        paint(color["black"])
+        move()   
+
+def row_14():
+    for i in range(7):
+        move()
+    paint(color["black"])
+    move()
+    move()
+    paint(color["black"])
+    for i in range(5):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+    move()
+    move()
+    paint(color["black"])
+    move()
+    move()
+    paint(color["black"])
+    move()
+    paint(color["orange"])
+    move()
+    paint(color["black"])
+
+def row_15():
+    for i in range(3):
+        move()
+    for i in range(2):
+        paint(color["orange"])
+        move()
+        move()
+    
+    paint(color["black"])
+    for i in range(9):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+
+def row_16():
+    for i in range(7):
+        move()
+    paint(color["black"])
+    for i in range(9):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+    move()
+    paint(color["orange"])
+    for i in range(2):
+        move()
+        paint(color["yellow"])
+    for i in range(2):
+        move()
+        paint(color["orange"])
+        
+def row_17():
+    move()
+    move()
+    paint(color["red"])
+    for i in range(2):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["yellow"])
+    move()
+    paint(color["orange"])
+    move()
+    move()
+    paint(color["black"])
+    for i in range(7):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+
+def row_18():
+    for i in range(8):
+        move()
+    paint(color["black"])
+    for i in range(7):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+    move()
+    move()
+    paint(color["red"])
+    for i in range(2):
+        move()
+        paint(color["orange"])
+    for i in range(2):
+        move()
+        paint(color["red"])
+        
+def row_19():
+    for i in range(2):
+        move()
+    for i in range(2):
+        move()
+        paint(color["red"])
+    move()
+    paint(color["yellow"])
+    move()
+    paint(color["red"])
+    move()
+    move()
+    move()
+    paint(color["black"])
+    for i in range(5):
+        move()
+        paint(color["orange"])
+    move()
+    paint(color["black"])
+    
+def row_20():
+    for i in range(10):
+        move()
+    paint(color["black"])
+    for i in range(4):
+        move()
+        paint(color["black"])
+    for i in range(3):
+        move()
+    for i in range(3):
+        move()
+        paint(color["red"])
+def row_final():
+    for i in range(5):
+        move()
+    paint(color["red"])
+
+def go_to_origin():
+    turn_right()
+    for i in range(20):
+        move()
+    turn_right()
+    for i in range(5):
+        move()
+    turn_left()
+    turn_left()
+
+row_1()
+move_up_row_right()
+row_2()
+move_up_row_left()
+row_3()
+move_up_row_right()
+row_4()
+move_up_row_left()
+row_5_6()
+move_up_row_right()
+row_5_6()
+move_up_row_left()
+row_7()
+move_up_row_right()
+row_8()
+move_up_row_left()
+row_9()
+move_up_row_right()
+row_10()
+move_up_row_left()
+row_11()
+move_up_row_right()
+row_12()
+move_up_row_left()
+row_13()
+move_up_row_right()
+row_14()
+move_up_row_left()
+row_15()
+move_up_row_right()
+row_16()
+move_up_row_left()
+row_17()
+move_up_row_right()
+row_18()
+move_up_row_left()
+row_19()
+move_up_row_right()
+row_20()
+move_up_row_left()
+row_final() 
+go_to_origin()
